@@ -16,12 +16,14 @@ logic [DW-1:0] b;
 always_comb begin
    if (alu_control[0]) begin              //taking its complement if we want to subtract
       b = ~B;
+   end else begin
+      b = B;
    end
 
 end
 
 always_comb begin
-   add_out = A + b + alu_control[0];       //Full adder output
+   assign add_out = A + b + alu_control[0];       //Full adder output
 end
 
 always_comb begin

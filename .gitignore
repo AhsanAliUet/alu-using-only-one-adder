@@ -1,0 +1,4 @@
+#ignoring some folder of the QuestaSim and vivado projects
+
+questa_project_alu/
+vivado_project_alu/
